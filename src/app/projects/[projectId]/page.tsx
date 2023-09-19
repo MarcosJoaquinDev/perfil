@@ -12,6 +12,8 @@ export default function Project({ params }: { params: { projectId: string } }) {
           className="w-full"
           src={project?.img}
           alt={`picture of ${project?.title}, Marcos Acuña  profile`}
+          width={200}
+          height={200}
         />
       </picture>
       <aside className="p-8">
@@ -25,6 +27,8 @@ export default function Project({ params }: { params: { projectId: string } }) {
                 className="w-full h-auto"
                 style={{ maxWidth: "100px" }}
                 alt={`Logo ${index}`}
+                width={200}
+                height={200}
               />
             </div>
           ))}

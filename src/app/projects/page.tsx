@@ -13,7 +13,7 @@ export default async function Projects() {
     </Link>
   ));
   return (
-    <main className="flex justify-around flex-wrap gap-8 p-4 ">
+    <main className="flex justify-around flex-wrap gap-8 p-4 mt-16">
       {CardsProyects}
     </main>
   );

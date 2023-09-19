@@ -13,10 +13,5 @@ export default function ProyectsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <main>
-      <h2>Proyectos</h2>
-      {children}
-    </main>
-  );
+  return <main>{children}</main>;
 }

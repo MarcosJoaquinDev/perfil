@@ -2,7 +2,13 @@ import Image from "next/image";
 export default function Card({ title, description, img, tags }: ProjectProps) {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
-      <Image className="w-full" src={img} alt="foto de chat" />
+      <Image
+        className="w-full"
+        src={img}
+        alt="foto de chat"
+        width={200}
+        height={200}
+      />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-gray-700 text-base">{description}</p>
