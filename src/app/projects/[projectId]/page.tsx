@@ -1,11 +1,14 @@
 import { proyects } from "@/data/proyects";
+import Image from "next/image";
 
 export default function Project({ params }: { params: { projectId: string } }) {
-  const project = proyects.find((p) => p.id === params.projectId);
+  const project = proyects.find(
+    (p) => p.id === params.projectId
+  ) as ProjectProps;
   return (
     <main className="flex items-center justify-between p-8 mt-7">
       <picture className="max-w-4xl">
-        <img
+        <Image
           className="w-full"
           src={project?.img}
           alt={`picture of ${project?.title}, Marcos Acuña  profile`}
@@ -15,9 +18,9 @@ export default function Project({ params }: { params: { projectId: string } }) {
         <h1 className="text-4xl font-bold">{project?.title}</h1>
         <h2 className="text-2xl mb-8">{project?.description}</h2>
         <div className="flex gap-8">
-          {project?.logos.map((logo, index) => (
+          {project.logos?.map((logo, index) => (
             <div className="max-w-xs flex flex-col justify-center" key={index}>
-              <img
+              <Image
                 src={logo}
                 className="w-full h-auto"
                 style={{ maxWidth: "100px" }}
