@@ -9,6 +9,7 @@ export default async function Projects() {
         description={p.description}
         img={p.img}
         tags={p.tags}
+        key={p.id}
       />
     </Link>
   ));
