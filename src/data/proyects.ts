@@ -12,8 +12,8 @@ export const proyects = [
       "https://assets.website-files.com/5d3ef00c73102c436bc83996/5d3ef00c73102c1f23c83a2a_logo-reversed.png",
       "https://upload.wikimedia.org/wikipedia/commons/e/ef/Logo-algolia-nebula-blue-withspaces%402x.png",
     ],
-    repository: "https://github.com/MarcosJoaquinDev",
-    link: "https://github.com/MarcosJoaquinDev",
+    repository: "https://github.com/MarcosJoaquinDev/e-comerce",
+    link: "https://e-comerce-bice.vercel.app/",
   },
   {
     id: "buscardos-de-mascotas",
