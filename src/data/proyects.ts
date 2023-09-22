@@ -4,7 +4,7 @@ export const proyects = [
     id: "e-comerce",
     title: "Ecomerce",
     description:
-      "comercio electronico echo con Nextjs usando la api de mercado pago para la integracion y airtable y algolcia para administrar el contentenido de los productos",
+      "Este proyecto se centra en el desarrollo de una plataforma de comercio electrónico implementada con Next.js, que utiliza la API de Mercado Pago para la integración de pagos. Además, para gestionar eficazmente el contenido de los productos, se recurre a Airtable y Algolia. Esta solución ofrece una experiencia de compra en línea robusta y eficiente, permitiendo a los usuarios explorar y adquirir productos de manera sencilla y segura.",
     img: "/comerce.svg",
     tags:["Nextjs","Typescript", "Firebase","MercadoPago"],
     logos: [
@@ -19,7 +19,7 @@ export const proyects = [
     id: "buscardos-de-mascotas",
     title: "Buscador de Mascotas",
     description:
-      "aplicaion de react que usa un buscardor de mascotoas perdidas, usando geolocalizacion con mapbox, indezandolo con algolia y guardando los datos de usuario a travez de una ORM de postgre",
+      "Este proyecto consiste en la creación de un buscador de mascotas perdidas, utilizando la tecnología de geolocalización de Mapbox para proporcionar ubicaciones precisas. Los datos se indexan con Algolia para una búsqueda eficiente, y se almacenan en una base de datos PostgreSQL respaldada por una ORM para la gestión segura de la información del usuario. Esta solución profesional permite a los usuarios localizar y recuperar mascotas perdidas de manera efectiva y precisa.",
     img: "/dog.svg",
     tags:["React","Typescript", "Algolia","PosgreSQL"],
     logos: [
@@ -34,7 +34,7 @@ export const proyects = [
     id: "chat",
     title: "Chat",
     description:
-      "Un chat basado en un base de datos en tiempo real que genera la conexion entre 2 o varios usuario para su comunicacion echa con Firebase y React",
+      "Un chat basado en una base de datos en tiempo real que facilita la conexión entre 2 o más usuarios para su comunicación se ha desarrollado utilizando Firebase y React. Este sistema permite una interacción fluida y en tiempo real, brindando a los usuarios una plataforma eficaz para la comunicación en línea.",
     img: "/chat.svg",
     tags:["NextJs","Typescript", "Firebase","NextUI"],
     logos: [
@@ -49,7 +49,7 @@ export const proyects = [
     id: "enrutador",
     title: "Enrutador",
     description:
-      "este es una pqqueña libreria que permite al desarrollador crear rutas a traves de un sistema de carpetas para crear Single Pages Applications",
+      "Esta librería proporciona a los desarrolladores web una herramienta que les permite crear rutas de navegación de manera eficiente mediante un sistema de organización de carpetas, lo que facilita la creación de aplicaciones de página única (SPA, por sus siglas en inglés). Con esta solución, los desarrolladores pueden estructurar sus proyectos de manera ordenada y coherente, lo que simplifica el proceso de desarrollo y mejora la mantenibilidad de las SPAs.",
     img: "/route.svg",
     tags:["React","NodeJs","NPM"],
     logos: [
@@ -63,7 +63,7 @@ export const proyects = [
     id: "recetas",
     title: "Recetas",
     description:
-      "una pequeña app para buscar recetas, las clasifica segun el usuario y lleva a los links a sus respectivas recetas usando la api de la pagina de  Paulina cocina",
+      "Una pequeña app para buscar recetas, las clasifica segun el usuario y lleva a los links a sus respectivas recetas usando la api de la pagina de  Paulina cocina",
     img: "/cook.svg",
     tags:["React","Vitejs"],
     logos: [
