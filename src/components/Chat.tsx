@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Messages from "./Messages";
 
 export type Messages = {
@@ -11,7 +11,8 @@ export type Messages = {
 const initMessages: Messages[] = [
   { type: "bot", message: "Hola, en que puedo ayudarte?" },
 ];
-const API_KEY = "4I3y15xztHu7tgZzdJ2hTP5FO6aIrTO2I4zdhWkb";
+const API_KEY = process.env.NEXT_PUBLIC_API_CODEHERE;
+
 const EXAMPLES = [
   { text: "Hola", label: "Saludo" },
   { text: "Como estas?", label: "Saludo" },
@@ -47,9 +48,9 @@ const SendIcon = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className="feather feather-send"
   >
     <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -93,12 +94,22 @@ export default function Chat() {
 
     setValue("");
   };
+
+  const containerChat = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    containerChat.current?.scrollTo(0, containerChat.current.scrollHeight);
+  }, [messages]);
+
   return (
     <form
-      className=" border-slate-100 p-4 rounded bg-zinc-950 w-3/5"
+      className=" border-slate-100 p-4 rounded bg-zinc-950 w-4/5 md:w-2/5"
       onSubmit={handle}
     >
-      <div>
+      <div
+        className="h-80 w-full flex flex-col overflow-y-auto"
+        ref={containerChat}
+      >
         <Messages messages={messages} />
       </div>
       <div className="flex gap-2 align-middle mt-4 items-center">
